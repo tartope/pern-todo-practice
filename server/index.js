@@ -19,7 +19,7 @@ app.post('/todos', async(req,res)=>{
     //try/catch is for error handling
     try {
         const { description } = req.body;
-        const newTodo = await pool.query('INSERT INTO todos (description) VALUES($1) RETURNING *', [description]);  //'[description]' inside the query is the value of $1 (allows dynamic data). 'RETURNING *' used to return the data.
+        const newTodo = await pool.query('INSERT INTO todos (description) VALUES($1) RETURNING *', [description]);  //'[description]' inside the query is the value of $1 (allows dynamic data). 'RETURNING *' used to return the data when you insert/update/delete data.
         res.json(newTodo.rows[0]);
     } catch (error) {
         console.error(err.message);
