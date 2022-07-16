@@ -2,7 +2,7 @@
 1. Postgresql: connects db with server in order to run pg queries
 2. Express: used to quickly create server in node.js
 3. React: used to build the frontend
-4. Node.js: used to
+4. Node.js: a runtime environment for JavaScript
 ## Steps 
 ### Build Server
 1. Create 'server' folder
