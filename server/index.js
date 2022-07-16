@@ -8,6 +8,7 @@ const cors = require("cors");
 const pool = require("./db");
 
 //middleware
+//cors allows different domain apps to interact with each other (ie. server and react app will be running on different ports).
 app.use(cors());
 app.use(express.json());  //req.body object: gets data from the client. gives access to req.body so json data can be retrieved.
 

@@ -1,4 +1,4 @@
-//uses pg library to configure connection to database.
+//uses pg library to configure server connection to database.
 const Pool = require('pg').Pool;
 
 //instance the pool
